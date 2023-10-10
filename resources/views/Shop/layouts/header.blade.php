@@ -115,8 +115,7 @@
                                     </div>
                                 </li>
 
-                                <li><a href="#">Tin tức</a></li>
-                                <li><a href="#">Địa chỉ</a></li>
+                                <li><a href="{{route('shop.contact')}}">Địa chỉ</a></li>
 
                                 @if (Auth::user())
                                     <li><a href="{{ route('shop.cart') }}" title="My cart">Giỏ hàng</a></li>

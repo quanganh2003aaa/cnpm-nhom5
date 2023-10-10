@@ -120,5 +120,9 @@ class ShopController extends Controller
         return view('Shop.checkOut', compact('brands', 'products'));
     }
 
-
+    public function contact()
+    {
+        $brands = Brand::orderBy('brand')->get();
+        return view('Shop.contact', compact('brands'));
+    }
 }
